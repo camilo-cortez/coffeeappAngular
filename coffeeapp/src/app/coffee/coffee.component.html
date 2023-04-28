@@ -1,15 +1,23 @@
 <div class="container-fluid">
   <div class="col-6">
+    <h1 style="font-family: Segoe Script;">El aroma mágico</h1>
+    <hr class="rounded" style="width: 879px;">
+    <img src="assets/CoffeeBeans.png" alt="CoffeeBeans" >
+    <hr class="rounded" style="width: 879px;">
     <table class="table">
-      <thead>
+      <thead class="table-dark">
         <tr>
-          <th class="h4">Course's Name</th>
-          <th class="h4">Professor's Name</th>
-          <th class="h4">Credits</th>
+          <th class="h4">#</th>
+          <th class="h4">Nombre</th>
+          <th class="h4">Tipo</th>
+          <th class="h4">Región</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let c of coffees">
+          <td>
+            <dd><b>{{c.id}}</b></dd>
+          </td>
           <td>
             <dd>{{c.nombre}}</dd>
           </td>
@@ -24,3 +32,9 @@
     </table>
   </div>
 </div>
+<br><br>
+<footer>
+  <div class="text-center p-4">
+    Contact us: +57 3102105253 - info@elaromamagico.com - @elaromamagico
+  </div>
+</footer>
